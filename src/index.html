@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renew Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Rubik', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #00001F;
+      color: #5AC1FF;
+    }
+
+    #passwordForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #5AC1FF;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 31, 0.3);
+    }
+
+    .form-title {
+      font-size: 24px;
+      color: #00001F;
+      margin-bottom: 20px;
+    }
+
+    input[type="password"] {
+      padding: 15px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      outline: none;
+      font-size: 18px;
+      width: 250px;
+    }
+
+    #renewButton {
+      padding: 15px 30px;
+      background-color: #00001F;
+      color: #5AC1FF;
+      border: none;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+      width: 250px;
+      box-shadow: 0 4px 8px rgba(90, 193, 255, 0.4);
+    }
+
+    #renewButton:hover {
+      background-color: #A9A9A9;
+      color: #00001F;
+    }
+
+    #renewButton:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 4px rgba(90, 193, 255, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <form id="passwordForm">
+    <div class="form-title">Re-Enroll Jamf</div>
+    <input type="password" id="password" placeholder="Enter Mac Password" required>
+    <button type="submit" id="renewButton">Renew Profile</button>
+  </form>
+  <script src="renderer.js"></script>
+</body>
+</html>
